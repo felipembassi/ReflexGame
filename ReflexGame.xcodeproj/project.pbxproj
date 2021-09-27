@@ -1,0 +1,974 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2402A18E438590909D6FF69B /* Pods_ReflexGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C1CE2057F34F5C6B50327DC /* Pods_ReflexGameTests.framework */; };
+		9400629E270212890064B72E /* ReflexViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9400629D270212890064B72E /* ReflexViewModelExtension.swift */; };
+		94021B5526FCB74D0099D018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94021B5426FCB74D0099D018 /* AppDelegate.swift */; };
+		94021B5726FCB74D0099D018 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94021B5626FCB74D0099D018 /* SceneDelegate.swift */; };
+		94021B5926FCB74D0099D018 /* ReflexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94021B5826FCB74D0099D018 /* ReflexViewController.swift */; };
+		94021B5C26FCB74D0099D018 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94021B5A26FCB74D0099D018 /* Main.storyboard */; };
+		94021B5E26FCB74F0099D018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94021B5D26FCB74F0099D018 /* Assets.xcassets */; };
+		94021B6126FCB74F0099D018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94021B5F26FCB74F0099D018 /* LaunchScreen.storyboard */; };
+		94021B6C26FCB74F0099D018 /* ReflexBaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94021B6B26FCB74F0099D018 /* ReflexBaseTests.swift */; };
+		945E6C0D27017A410067AC8E /* ReflexViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E6C0C27017A410067AC8E /* ReflexViewControllerTests.swift */; };
+		945E6C13270192840067AC8E /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE2826FFEFA000049476 /* CGFloat.swift */; };
+		945E6C14270192840067AC8E /* ReflexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94021B5826FCB74D0099D018 /* ReflexViewController.swift */; };
+		945E6C15270192840067AC8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94021B5426FCB74D0099D018 /* AppDelegate.swift */; };
+		945E6C16270192840067AC8E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE2426FFED9100049476 /* String.swift */; };
+		945E6C17270192840067AC8E /* ReflexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE1A26FFD2D700049476 /* ReflexViewModel.swift */; };
+		945E6C18270192840067AC8E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94021B5626FCB74D0099D018 /* SceneDelegate.swift */; };
+		945E6C19270192840067AC8E /* ReflexViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE1226FFCDE400049476 /* ReflexViewDataSource.swift */; };
+		945E6C1A270192840067AC8E /* ReflexViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE1826FFD21C00049476 /* ReflexViewControllerCell.swift */; };
+		945E6C1B270192840067AC8E /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE2A2700D9B100049476 /* Double.swift */; };
+		945E6C1C270192840067AC8E /* ReflexViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE1D26FFD2EA00049476 /* ReflexViewModelProtocol.swift */; };
+		945E6C1D270192840067AC8E /* ReflexViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE2C2700DE6100049476 /* ReflexViewModelDelegate.swift */; };
+		945E6C1F270192840067AC8E /* Pods_ReflexGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E5B6CFA9405391B2401EBD /* Pods_ReflexGame.framework */; };
+		945E6C21270192840067AC8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94021B5F26FCB74F0099D018 /* LaunchScreen.storyboard */; };
+		945E6C22270192840067AC8E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94DAAE2226FFED4400049476 /* Localizable.strings */; };
+		945E6C23270192840067AC8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 94021B5D26FCB74F0099D018 /* Assets.xcassets */; };
+		945E6C24270192840067AC8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 94021B5A26FCB74D0099D018 /* Main.storyboard */; };
+		945E6C2C270192AD0067AC8E /* ReflexViewModelExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E6C2A270192A80067AC8E /* ReflexViewModelExtension.swift */; };
+		945E6C2E270195FE0067AC8E /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E6C2D270195FE0067AC8E /* Collection.swift */; };
+		945E6C2F270196420067AC8E /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945E6C2D270195FE0067AC8E /* Collection.swift */; };
+		94DAAE1326FFCDE400049476 /* ReflexViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE1226FFCDE400049476 /* ReflexViewDataSource.swift */; };
+		94DAAE1926FFD21C00049476 /* ReflexViewControllerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE1826FFD21C00049476 /* ReflexViewControllerCell.swift */; };
+		94DAAE1B26FFD2D700049476 /* ReflexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE1A26FFD2D700049476 /* ReflexViewModel.swift */; };
+		94DAAE1E26FFD2EA00049476 /* ReflexViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE1D26FFD2EA00049476 /* ReflexViewModelProtocol.swift */; };
+		94DAAE2326FFED4400049476 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 94DAAE2226FFED4400049476 /* Localizable.strings */; };
+		94DAAE2526FFED9100049476 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE2426FFED9100049476 /* String.swift */; };
+		94DAAE2926FFEFA000049476 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE2826FFEFA000049476 /* CGFloat.swift */; };
+		94DAAE2B2700D9B100049476 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE2A2700D9B100049476 /* Double.swift */; };
+		94DAAE2D2700DE6100049476 /* ReflexViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94DAAE2C2700DE6100049476 /* ReflexViewModelDelegate.swift */; };
+		ED7AEAD05951079133E8360C /* Pods_ReflexGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2E5B6CFA9405391B2401EBD /* Pods_ReflexGame.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		94021B6826FCB74F0099D018 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 94021B4926FCB74D0099D018 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 94021B5026FCB74D0099D018;
+			remoteInfo = WesperReflex;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4C1CE2057F34F5C6B50327DC /* Pods_ReflexGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReflexGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		761B61E08B90F6B41AB62D1F /* Pods-ReflexGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReflexGameTests.release.xcconfig"; path = "Target Support Files/Pods-ReflexGameTests/Pods-ReflexGameTests.release.xcconfig"; sourceTree = "<group>"; };
+		82504211446FADCB13D138ED /* Pods-ReflexGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReflexGameTests.debug.xcconfig"; path = "Target Support Files/Pods-ReflexGameTests/Pods-ReflexGameTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93CA4B0C9E9E1E6E8B4A96BD /* Pods-ReflexGame-ReflexGameUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReflexGame-ReflexGameUITests.release.xcconfig"; path = "Target Support Files/Pods-ReflexGame-ReflexGameUITests/Pods-ReflexGame-ReflexGameUITests.release.xcconfig"; sourceTree = "<group>"; };
+		9400629D270212890064B72E /* ReflexViewModelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexViewModelExtension.swift; sourceTree = "<group>"; };
+		94021B5126FCB74D0099D018 /* ReflexGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReflexGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		94021B5426FCB74D0099D018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		94021B5626FCB74D0099D018 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		94021B5826FCB74D0099D018 /* ReflexViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexViewController.swift; sourceTree = "<group>"; };
+		94021B5B26FCB74D0099D018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		94021B5D26FCB74F0099D018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		94021B6026FCB74F0099D018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		94021B6226FCB74F0099D018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		94021B6726FCB74F0099D018 /* ReflexGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReflexGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		94021B6B26FCB74F0099D018 /* ReflexBaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexBaseTests.swift; sourceTree = "<group>"; };
+		945E6C0C27017A410067AC8E /* ReflexViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexViewControllerTests.swift; sourceTree = "<group>"; };
+		945E6C28270192840067AC8E /* ReflexGameSequencial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReflexGameSequencial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		945E6C2A270192A80067AC8E /* ReflexViewModelExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexViewModelExtension.swift; sourceTree = "<group>"; };
+		945E6C2D270195FE0067AC8E /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		94DAAE1226FFCDE400049476 /* ReflexViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexViewDataSource.swift; sourceTree = "<group>"; };
+		94DAAE1826FFD21C00049476 /* ReflexViewControllerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexViewControllerCell.swift; sourceTree = "<group>"; };
+		94DAAE1A26FFD2D700049476 /* ReflexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexViewModel.swift; sourceTree = "<group>"; };
+		94DAAE1D26FFD2EA00049476 /* ReflexViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexViewModelProtocol.swift; sourceTree = "<group>"; };
+		94DAAE2226FFED4400049476 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		94DAAE2426FFED9100049476 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		94DAAE2826FFEFA000049476 /* CGFloat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		94DAAE2A2700D9B100049476 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
+		94DAAE2C2700DE6100049476 /* ReflexViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflexViewModelDelegate.swift; sourceTree = "<group>"; };
+		99C5C7EBEF40D7FA538DACE8 /* Pods-ReflexGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReflexGame.release.xcconfig"; path = "Target Support Files/Pods-ReflexGame/Pods-ReflexGame.release.xcconfig"; sourceTree = "<group>"; };
+		BB3D35DAAE8AEB71768E22DD /* Pods_ReflexGame_ReflexGameUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReflexGame_ReflexGameUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAF3014CDF509F2030AD467B /* Pods-ReflexGame-ReflexGameUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReflexGame-ReflexGameUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReflexGame-ReflexGameUITests/Pods-ReflexGame-ReflexGameUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6193F384E9494E394FA72EC /* Pods-ReflexGame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReflexGame.debug.xcconfig"; path = "Target Support Files/Pods-ReflexGame/Pods-ReflexGame.debug.xcconfig"; sourceTree = "<group>"; };
+		F2E5B6CFA9405391B2401EBD /* Pods_ReflexGame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReflexGame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		94021B4E26FCB74D0099D018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED7AEAD05951079133E8360C /* Pods_ReflexGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94021B6426FCB74F0099D018 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2402A18E438590909D6FF69B /* Pods_ReflexGameTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		945E6C1E270192840067AC8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945E6C1F270192840067AC8E /* Pods_ReflexGame.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44A78936936960DAC25B28F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6193F384E9494E394FA72EC /* Pods-ReflexGame.debug.xcconfig */,
+				99C5C7EBEF40D7FA538DACE8 /* Pods-ReflexGame.release.xcconfig */,
+				DAF3014CDF509F2030AD467B /* Pods-ReflexGame-ReflexGameUITests.debug.xcconfig */,
+				93CA4B0C9E9E1E6E8B4A96BD /* Pods-ReflexGame-ReflexGameUITests.release.xcconfig */,
+				82504211446FADCB13D138ED /* Pods-ReflexGameTests.debug.xcconfig */,
+				761B61E08B90F6B41AB62D1F /* Pods-ReflexGameTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		65AA975173D9E3633A70DE16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F2E5B6CFA9405391B2401EBD /* Pods_ReflexGame.framework */,
+				BB3D35DAAE8AEB71768E22DD /* Pods_ReflexGame_ReflexGameUITests.framework */,
+				4C1CE2057F34F5C6B50327DC /* Pods_ReflexGameTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9400629C270212750064B72E /* Default */ = {
+			isa = PBXGroup;
+			children = (
+				9400629D270212890064B72E /* ReflexViewModelExtension.swift */,
+			);
+			path = Default;
+			sourceTree = "<group>";
+		};
+		94021B4826FCB74D0099D018 = {
+			isa = PBXGroup;
+			children = (
+				94021B5326FCB74D0099D018 /* ReflexGame */,
+				94021B6A26FCB74F0099D018 /* ReflexGameTests */,
+				94021B5226FCB74D0099D018 /* Products */,
+				44A78936936960DAC25B28F9 /* Pods */,
+				65AA975173D9E3633A70DE16 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		94021B5226FCB74D0099D018 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				94021B5126FCB74D0099D018 /* ReflexGame.app */,
+				94021B6726FCB74F0099D018 /* ReflexGameTests.xctest */,
+				945E6C28270192840067AC8E /* ReflexGameSequencial.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		94021B5326FCB74D0099D018 /* ReflexGame */ = {
+			isa = PBXGroup;
+			children = (
+				94DAAE2126FFECAC00049476 /* Source */,
+				94DAAE1F26FFEC7C00049476 /* Resources */,
+				94021B6226FCB74F0099D018 /* Info.plist */,
+			);
+			path = ReflexGame;
+			sourceTree = "<group>";
+		};
+		94021B6A26FCB74F0099D018 /* ReflexGameTests */ = {
+			isa = PBXGroup;
+			children = (
+				945E6C0927017A160067AC8E /* Features */,
+				94021B6B26FCB74F0099D018 /* ReflexBaseTests.swift */,
+			);
+			path = ReflexGameTests;
+			sourceTree = "<group>";
+		};
+		945E6C0927017A160067AC8E /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				945E6C0A27017A1D0067AC8E /* Game */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		945E6C0A27017A1D0067AC8E /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				945E6C0B27017A2A0067AC8E /* View */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		945E6C0B27017A2A0067AC8E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				945E6C0C27017A410067AC8E /* ReflexViewControllerTests.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		945E6C0E270192380067AC8E /* Sequencial */ = {
+			isa = PBXGroup;
+			children = (
+				945E6C2A270192A80067AC8E /* ReflexViewModelExtension.swift */,
+			);
+			path = Sequencial;
+			sourceTree = "<group>";
+		};
+		94DAAE1426FFD0A500049476 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				94DAAE1526FFD0AF00049476 /* Game */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		94DAAE1526FFD0AF00049476 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				94DAAE1C26FFD2DA00049476 /* Protocol */,
+				94DAAE1726FFD0BD00049476 /* ViewModel */,
+				94DAAE1626FFD0B600049476 /* View */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		94DAAE1626FFD0B600049476 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				94021B5826FCB74D0099D018 /* ReflexViewController.swift */,
+				94DAAE1826FFD21C00049476 /* ReflexViewControllerCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		94DAAE1726FFD0BD00049476 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9400629C270212750064B72E /* Default */,
+				945E6C0E270192380067AC8E /* Sequencial */,
+				94DAAE1A26FFD2D700049476 /* ReflexViewModel.swift */,
+				94DAAE2C2700DE6100049476 /* ReflexViewModelDelegate.swift */,
+				94DAAE1226FFCDE400049476 /* ReflexViewDataSource.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		94DAAE1C26FFD2DA00049476 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				94DAAE1D26FFD2EA00049476 /* ReflexViewModelProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		94DAAE1F26FFEC7C00049476 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				94021B5A26FCB74D0099D018 /* Main.storyboard */,
+				94021B5F26FCB74F0099D018 /* LaunchScreen.storyboard */,
+				94021B5D26FCB74F0099D018 /* Assets.xcassets */,
+				94DAAE2226FFED4400049476 /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		94DAAE2126FFECAC00049476 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				94DAAE2726FFEF8B00049476 /* Extensions */,
+				94DAAE2626FFEE6B00049476 /* Infrastructure */,
+				94DAAE1426FFD0A500049476 /* Features */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		94DAAE2626FFEE6B00049476 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				94021B5426FCB74D0099D018 /* AppDelegate.swift */,
+				94021B5626FCB74D0099D018 /* SceneDelegate.swift */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		94DAAE2726FFEF8B00049476 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				94DAAE2426FFED9100049476 /* String.swift */,
+				94DAAE2826FFEFA000049476 /* CGFloat.swift */,
+				94DAAE2A2700D9B100049476 /* Double.swift */,
+				945E6C2D270195FE0067AC8E /* Collection.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		94021B5026FCB74D0099D018 /* ReflexGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94021B7B26FCB74F0099D018 /* Build configuration list for PBXNativeTarget "ReflexGame" */;
+			buildPhases = (
+				CB845464E3E8E06649C8824B /* [CP] Check Pods Manifest.lock */,
+				94E6A19C27012F2400286EB3 /* Run Script - SwiftLint */,
+				94021B4D26FCB74D0099D018 /* Sources */,
+				94021B4E26FCB74D0099D018 /* Frameworks */,
+				94021B4F26FCB74D0099D018 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReflexGame;
+			productName = WesperReflex;
+			productReference = 94021B5126FCB74D0099D018 /* ReflexGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+		94021B6626FCB74F0099D018 /* ReflexGameTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 94021B7E26FCB74F0099D018 /* Build configuration list for PBXNativeTarget "ReflexGameTests" */;
+			buildPhases = (
+				89BB491FFD6AD3771D61D0D5 /* [CP] Check Pods Manifest.lock */,
+				94021B6326FCB74F0099D018 /* Sources */,
+				94021B6426FCB74F0099D018 /* Frameworks */,
+				94021B6526FCB74F0099D018 /* Resources */,
+				401E6C7E7BF21788EBEBCA29 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				94021B6926FCB74F0099D018 /* PBXTargetDependency */,
+			);
+			name = ReflexGameTests;
+			productName = WesperReflexTests;
+			productReference = 94021B6726FCB74F0099D018 /* ReflexGameTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		945E6C0F270192840067AC8E /* ReflexGameSequencial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 945E6C25270192840067AC8E /* Build configuration list for PBXNativeTarget "ReflexGameSequencial" */;
+			buildPhases = (
+				945E6C10270192840067AC8E /* [CP] Check Pods Manifest.lock */,
+				945E6C11270192840067AC8E /* Run Script - SwiftLint */,
+				945E6C12270192840067AC8E /* Sources */,
+				945E6C1E270192840067AC8E /* Frameworks */,
+				945E6C20270192840067AC8E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReflexGameSequencial;
+			productName = WesperReflex;
+			productReference = 945E6C28270192840067AC8E /* ReflexGameSequencial.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		94021B4926FCB74D0099D018 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					94021B5026FCB74D0099D018 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					94021B6626FCB74F0099D018 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = 94021B5026FCB74D0099D018;
+					};
+				};
+			};
+			buildConfigurationList = 94021B4C26FCB74D0099D018 /* Build configuration list for PBXProject "ReflexGame" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 94021B4826FCB74D0099D018;
+			productRefGroup = 94021B5226FCB74D0099D018 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				94021B5026FCB74D0099D018 /* ReflexGame */,
+				94021B6626FCB74F0099D018 /* ReflexGameTests */,
+				945E6C0F270192840067AC8E /* ReflexGameSequencial */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		94021B4F26FCB74D0099D018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94021B6126FCB74F0099D018 /* LaunchScreen.storyboard in Resources */,
+				94DAAE2326FFED4400049476 /* Localizable.strings in Resources */,
+				94021B5E26FCB74F0099D018 /* Assets.xcassets in Resources */,
+				94021B5C26FCB74D0099D018 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94021B6526FCB74F0099D018 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		945E6C20270192840067AC8E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945E6C21270192840067AC8E /* LaunchScreen.storyboard in Resources */,
+				945E6C22270192840067AC8E /* Localizable.strings in Resources */,
+				945E6C23270192840067AC8E /* Assets.xcassets in Resources */,
+				945E6C24270192840067AC8E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		401E6C7E7BF21788EBEBCA29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReflexGameTests/Pods-ReflexGameTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReflexGameTests/Pods-ReflexGameTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReflexGameTests/Pods-ReflexGameTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89BB491FFD6AD3771D61D0D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReflexGameTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		945E6C10270192840067AC8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReflexGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		945E6C11270192840067AC8E /* Run Script - SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint --config .swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		94E6A19C27012F2400286EB3 /* Run Script - SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script - SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint --config .swiftlint.yml\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		CB845464E3E8E06649C8824B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReflexGame-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		94021B4D26FCB74D0099D018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DAAE2926FFEFA000049476 /* CGFloat.swift in Sources */,
+				94021B5926FCB74D0099D018 /* ReflexViewController.swift in Sources */,
+				94021B5526FCB74D0099D018 /* AppDelegate.swift in Sources */,
+				945E6C2E270195FE0067AC8E /* Collection.swift in Sources */,
+				94DAAE2526FFED9100049476 /* String.swift in Sources */,
+				94DAAE1B26FFD2D700049476 /* ReflexViewModel.swift in Sources */,
+				94021B5726FCB74D0099D018 /* SceneDelegate.swift in Sources */,
+				94DAAE1326FFCDE400049476 /* ReflexViewDataSource.swift in Sources */,
+				94DAAE1926FFD21C00049476 /* ReflexViewControllerCell.swift in Sources */,
+				9400629E270212890064B72E /* ReflexViewModelExtension.swift in Sources */,
+				94DAAE2B2700D9B100049476 /* Double.swift in Sources */,
+				94DAAE1E26FFD2EA00049476 /* ReflexViewModelProtocol.swift in Sources */,
+				94DAAE2D2700DE6100049476 /* ReflexViewModelDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		94021B6326FCB74F0099D018 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945E6C0D27017A410067AC8E /* ReflexViewControllerTests.swift in Sources */,
+				94021B6C26FCB74F0099D018 /* ReflexBaseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		945E6C12270192840067AC8E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				945E6C13270192840067AC8E /* CGFloat.swift in Sources */,
+				945E6C14270192840067AC8E /* ReflexViewController.swift in Sources */,
+				945E6C15270192840067AC8E /* AppDelegate.swift in Sources */,
+				945E6C16270192840067AC8E /* String.swift in Sources */,
+				945E6C2C270192AD0067AC8E /* ReflexViewModelExtension.swift in Sources */,
+				945E6C17270192840067AC8E /* ReflexViewModel.swift in Sources */,
+				945E6C2F270196420067AC8E /* Collection.swift in Sources */,
+				945E6C18270192840067AC8E /* SceneDelegate.swift in Sources */,
+				945E6C19270192840067AC8E /* ReflexViewDataSource.swift in Sources */,
+				945E6C1A270192840067AC8E /* ReflexViewControllerCell.swift in Sources */,
+				945E6C1B270192840067AC8E /* Double.swift in Sources */,
+				945E6C1C270192840067AC8E /* ReflexViewModelProtocol.swift in Sources */,
+				945E6C1D270192840067AC8E /* ReflexViewModelDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		94021B6926FCB74F0099D018 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 94021B5026FCB74D0099D018 /* ReflexGame */;
+			targetProxy = 94021B6826FCB74F0099D018 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		94021B5A26FCB74D0099D018 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94021B5B26FCB74D0099D018 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		94021B5F26FCB74F0099D018 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				94021B6026FCB74F0099D018 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		94021B7926FCB74F0099D018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		94021B7A26FCB74F0099D018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		94021B7C26FCB74F0099D018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6193F384E9494E394FA72EC /* Pods-ReflexGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WH7DC8GTYG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReflexGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = InnunovaTI.ReflexGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		94021B7D26FCB74F0099D018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C5C7EBEF40D7FA538DACE8 /* Pods-ReflexGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WH7DC8GTYG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReflexGame/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = InnunovaTI.ReflexGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		94021B7F26FCB74F0099D018 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82504211446FADCB13D138ED /* Pods-ReflexGameTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = InnunovaTI.ReflexGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReflexGame.app/ReflexGame";
+			};
+			name = Debug;
+		};
+		94021B8026FCB74F0099D018 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 761B61E08B90F6B41AB62D1F /* Pods-ReflexGameTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = InnunovaTI.ReflexGameTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReflexGame.app/ReflexGame";
+			};
+			name = Release;
+		};
+		945E6C26270192840067AC8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6193F384E9494E394FA72EC /* Pods-ReflexGame.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WH7DC8GTYG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ReflexGame copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = InnunovaTI.ReflexGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		945E6C27270192840067AC8E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C5C7EBEF40D7FA538DACE8 /* Pods-ReflexGame.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = WH7DC8GTYG;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ReflexGame copy-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = InnunovaTI.ReflexGame;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		94021B4C26FCB74D0099D018 /* Build configuration list for PBXProject "ReflexGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94021B7926FCB74F0099D018 /* Debug */,
+				94021B7A26FCB74F0099D018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94021B7B26FCB74F0099D018 /* Build configuration list for PBXNativeTarget "ReflexGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94021B7C26FCB74F0099D018 /* Debug */,
+				94021B7D26FCB74F0099D018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		94021B7E26FCB74F0099D018 /* Build configuration list for PBXNativeTarget "ReflexGameTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94021B7F26FCB74F0099D018 /* Debug */,
+				94021B8026FCB74F0099D018 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		945E6C25270192840067AC8E /* Build configuration list for PBXNativeTarget "ReflexGameSequencial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				945E6C26270192840067AC8E /* Debug */,
+				945E6C27270192840067AC8E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 94021B4926FCB74D0099D018 /* Project object */;
+}

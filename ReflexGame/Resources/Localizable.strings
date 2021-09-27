@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  ReflexGame
+
+  Created by Felipe Moreira Tarrio Bassi on 25/09/21.
+  
+*/
+
+"reflexGameScreenTitle" = "Reflex Game";
+"reflexGameSequencialModeScreenTitle" = "Sequencial Reflex Game";
+"reflexGameButtonTittleStart" = "Start";
+"reflexGameLabelElapsedTimeStartingValue" = "00:00";
+"reflexGameScoreValue" = "P: %d";

@@ -1,0 +1,6 @@
+framework module Pods_ReflexGame {
+  umbrella header "Pods-ReflexGame-umbrella.h"
+
+  export *
+  module * { export * }
+}
