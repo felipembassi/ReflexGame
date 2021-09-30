@@ -16,4 +16,4 @@ all, it’s decremented by 1.
 3. If the user’s score is 0, the game ends. Otherwise, it continues.
 T will start at 3000 milliseconds, and multiply itself by 0.9 every 5 turns.
 
-**On SequencialReflexGameTarget this game flashs n squares in series instead of just 1**
+**On ReflexGameSequencial target this game flashs n squares in series instead of just 1**
