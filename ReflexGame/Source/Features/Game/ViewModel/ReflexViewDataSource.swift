@@ -52,7 +52,7 @@ extension ReflexViewDataSource: UICollectionViewDataSource {
 extension ReflexViewDataSource: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        self.viewModel?.readUserInput(for: indexPath)
+        viewModel?.readUserInput(for: indexPath)
     }
 }
 

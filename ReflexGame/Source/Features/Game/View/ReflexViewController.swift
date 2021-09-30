@@ -141,9 +141,9 @@ class ReflexViewController: UIViewController {
     private func showGridFailure(_ completion: (() -> Void)? = nil) {
         collectionView?.isUserInteractionEnabled = false
         UIView.animate(withDuration: Self.animationDuration) { [unowned self] in
-            self.collectionView?.backgroundColor = .red
+            collectionView?.backgroundColor = .red
         } completion: { [unowned self] _ in
-            self.collectionView?.backgroundColor = .black
+            collectionView?.backgroundColor = .black
             guard let unwrappedCompletion = completion else { return }
             unwrappedCompletion()
         }
@@ -151,9 +151,9 @@ class ReflexViewController: UIViewController {
     
     private func showGridSuccess(_ completion: (() -> Void)? = nil) {
         UIView.animate(withDuration: Self.animationDuration) { [unowned self] in
-            self.collectionView?.backgroundColor = .green
+            collectionView?.backgroundColor = .green
         } completion: { [unowned self] _ in
-            self.collectionView?.backgroundColor = .black
+            collectionView?.backgroundColor = .black
             guard let unwrappedCompletion = completion else { return }
             unwrappedCompletion()
         }
